@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html {
+    height: 100%;
+}
+body {
+    background: url(../img/weather/sun.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    animation: fade 1s 1;
+}
+.weather-result-history {
+    width: 100%;
+}
+ul {
+    padding: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+a {
+    cursor: pointer;
+}
+li {
+    list-style-type: none;
+    color: #fff;
+    width: 100%;
+    text-align: left;
+    font-size: 25px;
+    padding: 5%;
+    cursor: pointer;
+}
+.prev:hover,
+.sidebar-search button:hover {
+    background: orange;
+    transition: all .5s;
+}
+
+li.active,
+li:hover {
+    color: #000;
+    opacity: 1;
+    background: orange;
+    transition: all .5s;
+}
+li.active {
+    background: #fff;
+}
+#root {
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+h1 {
+    color: #fff;
+}
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.clock {
+    font-size: 30px;
+}
+
+.main-btn {
+    border: 1px solid #fff;
+    text-decoration: none;
+    text-align: center;
+    background: none;
+    margin: 5px;
+    padding: 10px 20px;
+    width: 150px;
+    text-transform: uppercase;
+    color: inherit;
+    cursor: pointer;
+    color: #fff;
+}
+
+.main-btn:hover {
+    background: #fff;
+    color: #000;
+    transition: all .5s;
+    border: 1px solid #000;
+}
+
+
+
+.weather-form-wrapper {
+    display: flex;
+}
+.weather-form {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #fff;
+    margin-right: 3px;
+    box-sizing: border-box;
+}
+.weather-form input {
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid #fff;
+        font-size: 22px;
+        color: #fff;
+        padding: 10px;
+    }
+.weather-form input :focus {
+        outline: none;
+}
+    .weather-form input  button {
+        max-height: 50px;
+    }
+
+.weather-results {
+    display: flex;
+    align-items:  flex-start;
+    flex-direction: column;
+    border: 1px solid #fff;
+    margin-left: 3px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #fff;
+}
+.weather-results img {
+    width: 60px;
+    height: 60px;
+}
+
+input:focus {
+    outline: none;
+}
+.d-flex {
+    display: flex;
+} 
+.align-center {
+    align-items: center;
+} 
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+body .back-btn {
+    width: 280px;
+    box-sizing: border-box;
+}
+
+@media  screen and (max-width: 880px) {
+     
+    
+       body .weather-form {
+            display: flex;
+            flex-direction: column;
+            margin-right: 0;
+            width: 90%;
+            margin: 10px;
+        }
+        body .weather-form-wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        body .weather-results {
+            margin-top: 20px;
+            margin-left: 0;
+            width: 90%;
+            margin: 10px;
+        }
+
+}
+@media  screen and (max-width: 600px) {
+  
+     body   #root {
+            max-width: 80%;
+        }
+}
+
+@media  screen and (max-width: 350px) {
+
+    body #root input {
+                font-size: 16px;
+            }
+}
+.top {
+    animation: appearTop 1s 1;
+}
+.bottom {
+    animation: appearBottom 1s 1;
+}
+.left {
+    animation: appearLeft 1s 1;
+}
+.right {
+    animation: appearRight 1s 1;
+}
+
+@keyframes appearLeft {
+    0% {transform: translateX(-100%); opacity: 0;}
+    100% {transform: translateX(0%); opacity: 1;}
+}
+
+@keyframes appearRight {
+    0% {transform: translateX(100%); opacity: 0;}
+    100% {transform: translateX(0%); opacity: 1;}
+}
+
+@keyframes appearBottom {
+    0% {transform: translateY(100%); opacity: 0;}
+    100% {transform: translateY(0%); opacity: 1;}
+}
+@keyframes appearTop {
+    0% {transform: translateY(-100%); opacity: 0;}
+    100% {transform: translateY(0%); opacity: 1;}
+}
