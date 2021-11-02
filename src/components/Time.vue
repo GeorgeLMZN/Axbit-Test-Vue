@@ -32,10 +32,6 @@ export default {
 </script>
 
 <style scoped>
- @font-face {
-    font-family: Clock; 
-    src: url(../assets/fonts/clock.TTF);
-   }
    .clock {
      font-family: 'Clock', sans-serif;
      font-size: 50px;

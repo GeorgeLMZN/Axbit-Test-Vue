@@ -1,5 +1,5 @@
 <template>
-        <router-link to="/" class="prev left">
+        <router-link to="/Axbit-Test-Vue" class="prev left">
                     <img src="../assets/img/prev.svg" alt="">
         </router-link>
 </template>

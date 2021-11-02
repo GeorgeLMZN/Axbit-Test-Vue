@@ -1,8 +1,9 @@
 export default {
-    Drizzle: "https://1.downloader.disk.yandex.ru/preview/b6f65992b8d5558207e1cc42433c80b405fb2b2722acfcce20b39f3974951c4c/inf/l3PrD4S-y67JUQoh9GJmZypTeNqpPXuGJY1M60IHSyHnlbt6z05gfW_QQP1yjXaQ7CBc0vu_FCpOLqOAp0G-TA%3D%3D?uid=1081133296&filename=Drizzle.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1081133296&tknv=v2&size=1898x902",
-    Snow: "https://1.downloader.disk.yandex.ru/preview/70ebf4c7dbad3da8421263adde322160389ee8ae3c777ba75576002cc06955a3/inf/Lz6caP_KB7gLBOeM3gBmxE1cjDYjauKErd_dj_Tja_nBdjwnr0zr8umgU3F5YvQC1fm2M2A9pSz0jN07TjXalw%3D%3D?uid=1081133296&filename=Snow.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1081133296&tknv=v2&size=1898x830",
-    Clouds: "https://3.downloader.disk.yandex.ru/preview/b7ba416dd27c4812d5cca6c039c32f688ca107eb30038455c0c72d0850d8bf8e/inf/d9pcD-n-nq_AdjE4i65iX3emtcthO2_0b7hpo0Q7KPfFZATPqs75rH4s5S-82ZodeOgtqbX4X8v18iBbBAC-Ig%3D%3D?uid=1081133296&filename=Clouds.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1081133296&tknv=v2&size=1898x830",
-    Clear: "https://1.downloader.disk.yandex.ru/preview/e0748e7571b229418d2627725c31c4666e7a7c764a9748084d86fe6b0303b2c3/inf/vVIvWdRE7niCWRLwycuyTQJuxcEC3Xbb4eGDprj-iPfgI_H1_q3XJIZfh43CBn_5SqJ5MuBx06RcPTgDT4A3nw%3D%3D?uid=1081133296&filename=ClearSky.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1081133296&tknv=v2&size=1898x830",
-    Rain: "https://1.downloader.disk.yandex.ru/preview/471df51085f888bc68db087e9d3ffb8962701e04c8ece6037f0cae17b942b44a/inf/yHaG_2a5iuNyV9NVMOy2K6oBbmbL3uczrDOgvYw6p--cCDQoGRDCD2b60hkt5hHs1TzE29kdq7o4SjtIXG_W0g%3D%3D?uid=1081133296&filename=Rain.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1081133296&tknv=v2&size=1898x830",
-    Mist: "https://2.downloader.disk.yandex.ru/preview/82fceef3892813416b0f7735e3fa52f6cd54ba8dd5daaab2a4b65aca6f25bc04/inf/TIp44WECpScrhnjA8gq7AAJuxcEC3Xbb4eGDprj-iPeZdwmGsrg-yXmzU4U_ID1stG61LCsYPChOE-tflCHqBw%3D%3D?uid=1081133296&filename=Mist.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1081133296&tknv=v2&size=1898x830"
+    Drizzle: "https://raw.githubusercontent.com/GeorgeLMZN/photo/main/Drizzle.jpg",
+    Snow: "https://raw.githubusercontent.com/GeorgeLMZN/photo/main/Snow.jpg",
+    Clouds: "https://raw.githubusercontent.com/GeorgeLMZN/photo/main/Clouds.jpg",
+    Clear: "https://raw.githubusercontent.com/GeorgeLMZN/photo/main/ClearSky.jpg",
+    Rain: "https://raw.githubusercontent.com/GeorgeLMZN/photo/main/Rain.jpg",
+    Mist: "https://raw.githubusercontent.com/GeorgeLMZN/photo/main/Mist.jpg",
+    Haze: "https://raw.githubusercontent.com/GeorgeLMZN/photo/main/Mist.jpg"
 }

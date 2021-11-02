@@ -21,7 +21,7 @@ import Sidebar from './Sidebar.vue';
 import Bg from './Bg.vue';
 export default {
   components: { Sidebar, backBtn, Bg },
-  data () {
+  data() {
     return {
         weatherData: null,
         opened: false,
@@ -32,7 +32,7 @@ export default {
           return this.weatherData = obj;
       },
       hideBackBtn(open){
-        this.opened = open
+        this.opened = open;
       }   
   },
 }
@@ -91,7 +91,7 @@ export default {
         z-index: 1;
     }
     .fade {
-        animation: fade 1s 1;
+        animation: fade 2s 1;
     }
     ul {
         position: relative;
@@ -145,7 +145,7 @@ ul::-webkit-scrollbar-thumb {
          }
          .weather-info.under {
              font-size: 25px;
-                background-color: rgba(0, 0, 0, 0.2);
+                background-color: rgba(0, 0, 0, 0.9);
                transition: all .5s;
          }
     }

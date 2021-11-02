@@ -1,13 +1,16 @@
 <template>
-    <transition name="fade">
-        <img class="bg" :src="this.src" :key="this.src">
-    </transition>
+        <div class="bg fade" :style="this.background" :key="this.src"></div>
 </template>
 <script>
     export default {
         props:{
             src: String,
         },
+        computed:{
+            background() {
+                return 'background: url(' + this.src + ')';
+            }
+        }
     }
 </script>
 
@@ -16,12 +19,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 1920px;
+        width: 100%;
         height: 100%;
         background-size: cover !important;
-        animation: fade 1s 1;
-        z-index: -1;
     }
-    
-
 </style>

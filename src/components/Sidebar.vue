@@ -43,7 +43,14 @@ export default {
     },
     methods: {
         add(city) {
-            filteredData(this.city || city).then(res => this.currentCityWeather = res).then(() => {
+            filteredData(this.city || city)
+            .then(res => {
+                if(res === undefined){
+                    return;
+                }
+                this.currentCityWeather = res;
+            })
+            .then(() => {
             this.city = null;
             const obj = {
                 ico: this.currentCityWeather.ico,
@@ -122,14 +129,14 @@ export default {
         cursor: pointer;
     }
     .sidebar-search img {
-        max-width: 30px;
+        width: 30px;
     }
     .sidebar-search button {
         position: relative;
         border: none;
         background: transparent;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         cursor: pointer;
     }
     .sidebar-search button img {
@@ -151,7 +158,7 @@ export default {
         margin-top: 20px;
     }
     .sidebar-search a.arrow {
-        margin-left: 5px;
+        margin-left: 15px;
         width: 30px;
         height: 30px;
 
@@ -165,6 +172,7 @@ export default {
      .sidebar-search button[data-v-7d622f5c] {
         width: 30px;
         height: 30px;
+        margin-right: 15px;
       }
     }
 </style>

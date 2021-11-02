@@ -18,6 +18,10 @@ export default {
 </script>
 
 <style>
+@font-face {
+    font-family: Clock; 
+    src: url(./assets/fonts/clock.TTF);
+   }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

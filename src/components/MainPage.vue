@@ -1,8 +1,8 @@
 <template>
  <div class="app-wrapper">
     <h1 class="main-heading top">Hello!</h1>
-    <router-link to="/time" class="main-btn first left">Time</router-link>
-    <router-link  to="/weather" class="main-btn second right">Weather</router-link>
+    <router-link to="/Axbit-Test-Vue/time" class="main-btn first left">Time</router-link>
+    <router-link  to="/Axbit-Test-Vue/weather" class="main-btn second right">Weather</router-link>
   </div>
 </template>
 
