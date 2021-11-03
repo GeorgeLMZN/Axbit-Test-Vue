@@ -10,7 +10,6 @@
                  </button>
             </form>
             <cities-list :city="this.currentCityWeather.city" @choose="chooseCity"/>
-            <div class="border-line bottom"></div>
             <div class="weather-data right">
                 <div class="weather-data__item" v-if="this.currentCityWeather.weather">
                     <span>Today</span>
@@ -66,6 +65,9 @@ export default {
             this.$emit('open', this.opened)
         },
         chooseCity(item) {
+            if(item === undefined) {
+                return  this.$emit('getWeather',this.currentCityWeather = {});
+            }
             this.add(item);
         }
     }
