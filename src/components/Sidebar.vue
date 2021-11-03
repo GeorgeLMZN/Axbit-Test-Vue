@@ -155,27 +155,6 @@ export default {
         display: flex;
         justify-content: center;
     }
-        ul {
-        position: relative;
-    }
-    ul {
-        overflow-y: scroll;
-        overflow-x: hidden;
-        max-height: 300px;
-          position: relative;
-    }
-    ul::-webkit-scrollbar {
-    width: 5px;
-}
-
-    ul::-webkit-scrollbar-track {
-        background-color: rgba(0, 0, 0, 0);
-    }
-
-    ul::-webkit-scrollbar-thumb {
-    background: darkgrey;
-    height: 20px;
-    }
     @media  screen and (max-width: 500px) {
     .sidebar-search {
         max-width: 100%;
