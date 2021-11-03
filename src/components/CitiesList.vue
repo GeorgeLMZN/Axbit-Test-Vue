@@ -17,6 +17,7 @@ export default {
     props: {
         city: String,
     },
+    emits: ['choose'],
     data() {
         return {
             citiesList: []
@@ -57,12 +58,12 @@ export default {
 <style scoped>
     .list-wrapper {
         width: 100%;
-        margin-left: 5%;
     }
     .border-line {
         width: 90%;
         height: 1px;
         background: #fff;
+        margin-left: 5%;
     }
     .list-item {
         display: flex;

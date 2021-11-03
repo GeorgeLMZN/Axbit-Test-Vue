@@ -24,7 +24,7 @@ export default {
   data() {
     return {
         weatherData: null,
-        opened: false,
+        opened: true,
     }
   },
   methods: {
@@ -93,34 +93,13 @@ export default {
     .fade {
         animation: fade 2s 1;
     }
-    ul {
-        position: relative;
-    }
-    ul {
-        overflow-y: scroll;
-        overflow-x: hidden;
-        max-height: 300px;
-          position: relative;
-    }
-    ul::-webkit-scrollbar {
-    width: 5px;
-}
-
-ul::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, 0);
-}
-
-ul::-webkit-scrollbar-thumb {
-   background: darkgrey;
-   height: 20px;
-}
     @keyframes fade {
         0% {opacity: 0;}
         100% {opacity: 1;}
     }
     @keyframes sidebarLeft {
         0% {transform: translateX(100%); opacity: 1;}
-        100% {transform: translateX(90%); opacity: 1;}
+        100% {transform: translateX(0%); opacity: 1;}
     }
     @media  screen and (max-width: 475px) {
         .sidebar-search {

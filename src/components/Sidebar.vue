@@ -1,7 +1,7 @@
 <template>
-         <div :class="{active : opened}" class="sidebar rightBar">
+         <div :class="{'close' : opened}" class="sidebar rightBar">
             <form class="sidebar-search" @submit.prevent="add">
-                 <a class="arrow" :class="{'open' : opened }" @click="controllBar($event)">
+                 <a class="arrow" :class="{'close' : opened }" @click="controllBar($event)">
                     <img src="../assets/img/prev.svg" alt="">
                  </a>
                  <input v-model="this.city" type="text" placeholder="Type city here...">
@@ -33,6 +33,7 @@ import { filteredData } from '../api/weatherApi';
 import CitiesList from './CitiesList.vue';
 export default {
   components: { CitiesList },
+  emits: ['getWeather', 'open'],
     data () {
         return {
             opened: false,
@@ -62,7 +63,7 @@ export default {
         },
         controllBar() {
             this.opened = !this.opened;
-            this.$emit('open', this.opened)
+            this.$emit('open', !this.opened)
         },
         chooseCity(item) {
             if(item === undefined) {
@@ -82,7 +83,7 @@ export default {
         height: 100vh;
         width: 500px;
         max-width: 100%;
-        transform: translateX(90%);
+        transform: translateX(0%);
         background: rgba(0, 0 , 0, 0.5);
         animation: sidebarLeft 1s 1;
         display: flex;
@@ -92,11 +93,11 @@ export default {
         overflow: hidden;
         z-index: 9999;
     }
-    .sidebar.active {
-     transform: translateX(0%);
-     transition: all .5s;
+    .sidebar.close {
+     transform: translateX(90%);
+     transition: all 1s;
     }
-    .open {
+    .close {
         transform: rotate(180deg);
         margin-left: 0px;
         transition: all .5s;
@@ -153,6 +154,27 @@ export default {
         background: #fff;
         display: flex;
         justify-content: center;
+    }
+        ul {
+        position: relative;
+    }
+    ul {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        max-height: 300px;
+          position: relative;
+    }
+    ul::-webkit-scrollbar {
+    width: 5px;
+}
+
+    ul::-webkit-scrollbar-track {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    ul::-webkit-scrollbar-thumb {
+    background: darkgrey;
+    height: 20px;
     }
     @media  screen and (max-width: 500px) {
     .sidebar-search {
