@@ -1,7 +1,7 @@
 <template>
          <div :class="{'close' : opened}" class="sidebar rightBar">
             <form class="sidebar-search" @submit.prevent="add">
-                 <a class="arrow" :class="{'close' : opened }" @click="controllBar($event)">
+                 <a class="arrow" :class="{'open' : !opened }" @click="controllBar($event)">
                     <img src="../assets/img/prev.svg" alt="">
                  </a>
                  <input v-model="this.city" type="text" placeholder="Type city here...">
@@ -97,7 +97,7 @@ export default {
      transform: translateX(90%);
      transition: all 1s;
     }
-    .close {
+    .open {
         transform: rotate(180deg);
         margin-left: 0px;
         transition: all .5s;
